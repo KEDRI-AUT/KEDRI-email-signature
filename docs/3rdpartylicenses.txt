@@ -71,6 +71,10 @@ THE SOFTWARE.
 MIT
 MIT
 
+@angular/http@4.4.2
+MIT
+MIT
+
 @angular/forms@4.4.2
 MIT
 MIT
