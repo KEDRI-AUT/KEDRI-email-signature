@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {first} from "rxjs/operator/first";
+import {element} from "protractor";
 
 @Component({
   selector: 'app-sig',
@@ -7,7 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SigComponent implements OnInit {
 
-  constructor() { }
+  @Input() elements: {
+    firstName: string,
+    lastName: string,
+    email: string,
+    position: string,
+    phoneNumber: string,
+    mobileNumber: string
+  };
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
