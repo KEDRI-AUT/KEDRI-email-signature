@@ -15,15 +15,15 @@
 
       <br/><br/>
       <span style="font-family:Calibri,Arial, Helvetica, sans-serif; color:#5a9732; font-size:16px;">
-<strong>Name Lorem Ipsum</strong></span><br />
-Position Lorem Ipsum<br />
-<span style="font-family:Calibri,Arial, Helvetica, sans-serif; color:#5a9732; font-size:12px;"><strong>P</strong></span> 09 921 1234
+<strong>{{elements.firstName}} {{elements.lastName}}</strong></span><br />
+<div style="white-space:pre-wrap;">{{elements.position}}</div><br />
+<span style="font-family:Calibri,Arial, Helvetica, sans-serif; color:#5a9732; font-size:12px;" *ngIf="elements.phoneNumber !== ''"><strong>P</strong></span> {{elements.phoneNumber}}
 
-<span style="font-family:Calibri,Arial, Helvetica, sans-serif; color:#5a9732; font-size:12px;"><strong>&nbsp;&nbsp;&nbsp;M</strong></span> 021 0293 1234
+<span style="font-family:Calibri,Arial, Helvetica, sans-serif; color:#5a9732; font-size:12px;" *ngIf="elements.mobileNumber !== ''"><strong>&nbsp;&nbsp;&nbsp;M</strong></span> {{elements.mobileNumber}}
 
-<span style="font-family:Calibri,Arial, Helvetica, sans-serif; color:#5a9732; font-size:12px;"><strong>&nbsp;&nbsp;&nbsp;E</strong></span> <a href="mailto:email@aut.ac.nz" style="text-decoration: none;">email@aut.ac.nz</a>
+<span style="font-family:Calibri,Arial, Helvetica, sans-serif; color:#5a9732; font-size:12px;"><strong>&nbsp;&nbsp;&nbsp;E</strong></span> <a href="mailto:{{elements.email}}" style="text-decoration: none;">{{elements.email}}</a>
 
-<span style="font-family:Calibri,Arial, Helvetica, sans-serif; color:#5a9732; font-size:12px;"><strong>&nbsp;&nbsp;&nbsp;W</strong></span> <a href="http://www.aut.ac.nz" style="text-decoration: none;">aut.ac.nz</a>
+<span style="font-family:Calibri,Arial, Helvetica, sans-serif; color:#5a9732; font-size:12px;"><strong>&nbsp;&nbsp;&nbsp;W</strong></span> <a href="http://kedri.aut.ac.nz" style="text-decoration: none;">kedri.aut.ac.nz</a>
       </td>
       <td width="100" align="right" valign="top"><a href="https://www.aut.ac.nz/"><img src="../../assets/images/AUT-logo-block.gif" width="80" height="57" alt="AUT UNIVERSITY" border="0" hspace="0" vspace="0"/></a></td>
     </tr>
