@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Output} from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,25 +6,22 @@ import {Component, EventEmitter, Output} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-  @Output() contentCreated = new EventEmitter<{
-    firstName: string,
-    lastName: string,
-    email: string,
-    position: string,
-    phoneNumber: string,
-    mobileNumber: string
-  }>();
+  contentCreated = {
+    firstName: 'First name',
+    lastName: 'Last name',
+    email: 'email@aut.ac.nz',
+    position: 'Full position',
+    phoneNumber: '09 921 1234',
+    mobileNumber: '021 011 1234'
+  };
 
   onContentCreate(firstName: HTMLInputElement, lastName: HTMLInputElement, email: HTMLInputElement, phoneNumber: HTMLInputElement, mobileNumber: HTMLInputElement, position: HTMLInputElement) {
-    this.contentCreated.emit({
-      firstName: firstName.value,
-      lastName: lastName.value,
-      email: email.value,
-      phoneNumber: phoneNumber.value,
-      mobileNumber: mobileNumber.value,
-      position: position.value
-    });
-    console.log("onContentCreated called.")
+
+    this.contentCreated.firstName = firstName.value;
+    this.contentCreated.lastName = lastName.value;
+    this.contentCreated.email = email.value;
+    this.contentCreated.position = position.value;
+    this.contentCreated.phoneNumber = phoneNumber.value;
+    this.contentCreated.mobileNumber = mobileNumber.value;
   }
 }
