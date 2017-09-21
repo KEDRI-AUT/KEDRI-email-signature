@@ -1,6 +1,4 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {first} from "rxjs/operator/first";
-import {element} from "protractor";
 
 @Component({
   selector: 'app-sig',
