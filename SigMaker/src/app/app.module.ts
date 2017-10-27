@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { SigComponent } from './sig/sig.component';
 import {FormsModule} from "@angular/forms";
 import {HttpModule} from "@angular/http";
+import {MessengerService} from "./messenger.service";
 import { AppFormComponent } from './app-form/app-form.component';
 
 @NgModule({
@@ -18,7 +19,7 @@ import { AppFormComponent } from './app-form/app-form.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [MessengerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
