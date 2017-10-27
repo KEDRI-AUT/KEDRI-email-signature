@@ -7,7 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class SigComponent implements OnInit {
 
-  @Input() elements: {
+  @Input() content: {
     firstName: string,
     lastName: string,
     email: string,
