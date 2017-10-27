@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { SigComponent } from './sig/sig.component';
 import {FormsModule} from "@angular/forms";
 import {HttpModule} from "@angular/http";
+import { AppFormComponent } from './app-form/app-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SigComponent
+    SigComponent,
+    AppFormComponent
   ],
   imports: [
     BrowserModule,
