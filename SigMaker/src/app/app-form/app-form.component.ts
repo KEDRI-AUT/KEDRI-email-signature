@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {MessengerService} from "../messenger.service";
 
 @Component({
@@ -8,19 +8,14 @@ import {MessengerService} from "../messenger.service";
 })
 export class AppFormComponent implements OnInit {
 
-  constructor(private messageService: MessengerService) { }
+  constructor(private messageService: MessengerService) {
+  }
 
   ngOnInit() {
   }
 
-  onContentCreate(firstName: HTMLInputElement, lastName: HTMLInputElement, email: HTMLInputElement, phoneNumber: HTMLInputElement, mobileNumber: HTMLInputElement, position: HTMLInputElement) {
-
-    this.contentCreated.firstName = firstName.value;
-    this.contentCreated.lastName = lastName.value;
-    this.contentCreated.email = email.value;
-    this.contentCreated.position = position.value;
-    this.contentCreated.phoneNumber = phoneNumber.value;
-    this.contentCreated.mobileNumber = mobileNumber.value;
+  onContentCreate(firstName: string, lastName: string, email: string, phoneNumber: string, mobileNumber: string, position: string) {
+    this.messageService.updateContent(firstName, lastName, email, phoneNumber, mobileNumber, position);
   }
 
 }

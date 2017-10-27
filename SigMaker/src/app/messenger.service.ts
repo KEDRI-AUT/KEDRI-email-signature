@@ -14,8 +14,13 @@ export class MessengerService {
 
   constructor() { }
 
-  updateContent(){
-
+  updateContent(firstName: string, lastName: string, email: string, phoneNumber: string, mobileNumber: string, position: string){
+    this.content.firstName = firstName;
+    this.content.lastName = lastName;
+    this.content.email = email;
+    this.content.position = position;
+    this.content.phoneNumber = phoneNumber;
+    this.content.mobileNumber = mobileNumber;
   }
 
 }
