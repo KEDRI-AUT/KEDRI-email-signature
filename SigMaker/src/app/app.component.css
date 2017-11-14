@@ -21,17 +21,17 @@
 a:link {
   font-weight: bold;
   text-decoration: underline;
-  color: grey;
+  color: #ffffff;
 }
 
 a:visited {
-    color: grey;
+    color: #ffffff;
 }
 
 a:hover {
-    color: grey;
+    color: #ffffff;
 }
 
 a:active {
-    color: grey;
+    color: #ffffff;
 }
