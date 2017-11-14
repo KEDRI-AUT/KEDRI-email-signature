@@ -1,6 +1,6 @@
 # KEDRI-email-signature
 
-A simple Angular 4 based web application to generate KEDRI email signature.
+A simple Angular 5 based web application to generate KEDRI email signature.
 
 ## Local (development)
 
