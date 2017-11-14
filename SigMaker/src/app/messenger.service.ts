@@ -4,10 +4,10 @@ import { Injectable } from '@angular/core';
 export class MessengerService {
 
   content = {
-    firstName: 'First name',
-    lastName: 'Last name',
-    email: 'email@aut.ac.nz',
-    position: 'Full position',
+    firstName: 'John',
+    lastName: 'Doe',
+    email: 'john.doe@aut.ac.nz',
+    position: 'Researcher',
     phoneNumber: '09 921 1234',
     mobileNumber: '021 011 1234',
     showImages: null
