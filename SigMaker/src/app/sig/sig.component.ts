@@ -13,7 +13,8 @@ export class SigComponent implements OnInit {
     email: string,
     position: string,
     phoneNumber: string,
-    mobileNumber: string
+    mobileNumber: string,
+    showImages: boolean
   };
 
   constructor() {

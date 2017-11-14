@@ -9,18 +9,20 @@ export class MessengerService {
     email: 'email@aut.ac.nz',
     position: 'Full position',
     phoneNumber: '09 921 1234',
-    mobileNumber: '021 011 1234'
+    mobileNumber: '021 011 1234',
+    showImages: null
   };
 
   constructor() { }
 
-  updateContent(firstName: string, lastName: string, email: string, phoneNumber: string, mobileNumber: string, position: string){
+  updateContent(firstName: string, lastName: string, email: string, phoneNumber: string, mobileNumber: string, position: string, showImages: boolean){
     this.content.firstName = firstName;
     this.content.lastName = lastName;
     this.content.email = email;
     this.content.position = position;
     this.content.phoneNumber = phoneNumber;
     this.content.mobileNumber = mobileNumber;
+    this.content.showImages = showImages;
   }
 
 }

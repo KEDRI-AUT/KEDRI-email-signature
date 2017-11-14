@@ -45,8 +45,14 @@
       <textarea name="position" id="position_id" class="form-control" #position></textarea>
 
     </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" value="" #showImages>
+        Show Images?
+      </label>
+    </div>
     <input type="submit" value="Submit" class="btn btn-primary"
-           (click)="onContentCreate(firstName.value, lastName.value, email.value, phoneNumber.value, mobileNumber.value, position.value)"/>
+           (click)="onContentCreate(firstName.value, lastName.value, email.value, phoneNumber.value, mobileNumber.value, position.value, showImages.checked)"/>
 
   </form>
 </div>

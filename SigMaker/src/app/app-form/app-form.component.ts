@@ -14,8 +14,8 @@ export class AppFormComponent implements OnInit {
   ngOnInit() {
   }
 
-  onContentCreate(firstName: string, lastName: string, email: string, phoneNumber: string, mobileNumber: string, position: string) {
-    this.messageService.updateContent(firstName, lastName, email, phoneNumber, mobileNumber, position);
+  onContentCreate(firstName: string, lastName: string, email: string, phoneNumber: string, mobileNumber: string, position: string, showImages: boolean) {
+    this.messageService.updateContent(firstName, lastName, email, phoneNumber, mobileNumber, position, showImages);
   }
 
 }
