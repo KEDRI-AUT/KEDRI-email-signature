@@ -21,4 +21,4 @@ To deploy the web app on GitHub pages, do the following:
 
 URL [https://kedri-aut.github.io/KEDRI-email-signature/](https://kedri-aut.github.io/KEDRI-email-signature/)
 
-![Screenshot](https://raw.githubusercontent.com/KEDRI-AUT/KEDRI-email-signature/master/SigMaker.JPG)
+![Screenshot](https://raw.githubusercontent.com/KEDRI-AUT/KEDRI-email-signature/master/SigMaker.png)
