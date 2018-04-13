@@ -1,10 +1,11 @@
-p td span {
+#sigs p td span {
 	font-family:Calibri,Arial, Helvetica, sans-serif;
 }
-table td {border-collapse: collapse;}
-a:link { color:#5a9732; text-decoration: underline; }
-a:visited { color:#5a9732; text-decoration: underline; }
-a:hover { color:#5a9732; text-decoration: underline; }
-a:active { color:#5a9732; text-decoration: underline; }
-.ReadMsgBody {width: 100%;}
-.ExternalClass {width: 100%; background-color:#ececec !important;}
+#sigs table td {border-collapse: collapse;}
+#sigs a:link { color:#5a9732; text-decoration: underline; }
+#sigs a:visited { color:#5a9732; text-decoration: underline; }
+#sigs a:hover { color:#5a9732; text-decoration: underline; }
+#sigs a:active { color:#5a9732; text-decoration: underline; }
+#sigs .ReadMsgBody {width: 100%;}
+#sigs .ExternalClass {width: 100%; background-color:#ececec !important;}
+
