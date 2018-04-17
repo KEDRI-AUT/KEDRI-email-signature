@@ -10,12 +10,13 @@ export class MessengerService {
     position: 'Researcher',
     phoneNumber: '09 921 1234',
     mobileNumber: '021 011 1234',
-    showImages: null
+    showImages: null,
+    showCode: null
   };
 
   constructor() { }
 
-  updateContent(firstName: string, lastName: string, email: string, phoneNumber: string, mobileNumber: string, position: string, showImages: boolean){
+  updateContent(firstName: string, lastName: string, email: string, phoneNumber: string, mobileNumber: string, position: string, showImages: boolean, showCode: boolean){
     this.content.firstName = firstName;
     this.content.lastName = lastName;
     this.content.email = email;
@@ -23,6 +24,7 @@ export class MessengerService {
     this.content.phoneNumber = phoneNumber;
     this.content.mobileNumber = mobileNumber;
     this.content.showImages = showImages;
+    this.content.showCode = showCode;
   }
 
 }
