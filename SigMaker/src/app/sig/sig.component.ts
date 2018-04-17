@@ -14,7 +14,8 @@ export class SigComponent implements OnInit {
     position: string,
     phoneNumber: string,
     mobileNumber: string,
-    showImages: boolean
+    showImages: boolean,
+    showCode: boolean
   };
 
   constructor() {
