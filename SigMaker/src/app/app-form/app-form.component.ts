@@ -21,7 +21,7 @@ export class AppFormComponent implements OnInit {
     this.messageService.updateContent(firstName, lastName, email, phoneNumber, mobileNumber, position, showImages);
   }
 
-  onClear(sigForm){
+  onClear(sigForm: HTMLFormElement){
     sigForm.reset();
   }
 
