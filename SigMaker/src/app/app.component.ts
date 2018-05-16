@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.appCompContent = this.messengerService.content;
+    this.appCompContent = this.messengerService.defaultContent;
     this.httpClient.get('https://api.github.com/repos/KEDRI-AUT/KEDRI-email-signature/releases/latest').subscribe(
       data => {
         this.version = data['tag_name'];

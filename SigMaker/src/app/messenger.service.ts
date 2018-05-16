@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class MessengerService {
 
-  content = {
+  defaultContent = {
     firstName: 'John',
     lastName: 'Doe',
     email: 'john.doe@aut.ac.nz',
@@ -16,13 +16,13 @@ export class MessengerService {
   constructor() { }
 
   updateContent(firstName: string, lastName: string, email: string, phoneNumber: string, mobileNumber: string, position: string, showImages: boolean){
-    this.content.firstName = firstName;
-    this.content.lastName = lastName;
-    this.content.email = email;
-    this.content.position = position;
-    this.content.phoneNumber = phoneNumber;
-    this.content.mobileNumber = mobileNumber;
-    this.content.showImages = showImages;
+    this.defaultContent.firstName = firstName;
+    this.defaultContent.lastName = lastName;
+    this.defaultContent.email = email;
+    this.defaultContent.position = position;
+    this.defaultContent.phoneNumber = phoneNumber;
+    this.defaultContent.mobileNumber = mobileNumber;
+    this.defaultContent.showImages = showImages;
   }
 
 }
