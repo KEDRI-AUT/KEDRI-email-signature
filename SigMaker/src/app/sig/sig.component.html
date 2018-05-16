@@ -2,8 +2,8 @@
 
 <br/><br/><br/><br/>
 <div class="container" id="sigs">
-  <div *ngIf="content.showImages != null">
-    <div class="row" *ngIf="content.showImages; else elseBlock">
+  <div *ngIf="sigCompContent.showImages != null">
+    <div class="row" *ngIf="sigCompContent.showImages; else elseBlock">
       <div
         style="margin:0px; padding:0px; font-family:Calibri,Arial, Helvetica, sans-serif; font-size:12px; color:#000000; background-color:#ffffff;">
         <table width="659" border="0" cellspacing="0" cellpadding="0">
@@ -24,18 +24,18 @@
 
               <br/><br/>
               <span style="font-family:Calibri,Arial, Helvetica, sans-serif; color:#5a9732; font-size:16px;">
-          <strong>{{content.firstName}} {{content.lastName}}</strong></span><br/>
-              <div style="white-space:pre-wrap;">{{content.position}}</div>
+          <strong>{{sigCompContent.firstName}} {{sigCompContent.lastName}}</strong></span><br/>
+              <div style="white-space:pre-wrap;">{{sigCompContent.position}}</div>
               <br/>
               <span style="font-family:Calibri,Arial, Helvetica, sans-serif; color:#5a9732; font-size:12px;"
-                    *ngIf="content.phoneNumber !== ''"><strong>P</strong></span> {{content.phoneNumber}}
+                    *ngIf="sigCompContent.phoneNumber !== ''"><strong>P</strong></span> {{sigCompContent.phoneNumber}}
 
               <span style="font-family:Calibri,Arial, Helvetica, sans-serif; color:#5a9732; font-size:12px;"
-                    *ngIf="content.mobileNumber !== ''"><strong>&nbsp;&nbsp;&nbsp;M</strong></span>
-              {{content.mobileNumber}}
+                    *ngIf="sigCompContent.mobileNumber !== ''"><strong>&nbsp;&nbsp;&nbsp;M</strong></span>
+              {{sigCompContent.mobileNumber}}
 
               <span style="font-family:Calibri,Arial, Helvetica, sans-serif; color:#5a9732; font-size:12px;"><strong>&nbsp;&nbsp;&nbsp;E</strong></span>
-              <a href="mailto:{{content.email}}" style="text-decoration: none;"> {{content.email}}</a>
+              <a href="mailto:{{sigCompContent.email}}" style="text-decoration: none;"> {{sigCompContent.email}}</a>
 
               <span style="font-family:Calibri,Arial, Helvetica, sans-serif; color:#5a9732; font-size:12px;"><strong>&nbsp;&nbsp;&nbsp;W</strong></span>
               <a href="http://kedri.aut.ac.nz" style="text-decoration: none;"> kedri.aut.ac.nz</a>
@@ -73,19 +73,19 @@
                   style="font-family:Calibri,Arial, Helvetica, sans-serif; font-size:12px;">
 
           <span style="font-family:Calibri,Arial, Helvetica, sans-serif; color:#5a9732; font-size:16px;">
-          <strong>{{content.firstName}} {{content.lastName}}</strong></span><br/>
-                <div style="white-space:pre-wrap;">{{content.position}}</div>
+          <strong>{{sigCompContent.firstName}} {{sigCompContent.lastName}}</strong></span><br/>
+                <div style="white-space:pre-wrap;">{{sigCompContent.position}}</div>
                 <div style="white-space:pre-wrap;">AUT Knowledge Engineering & Discovery Research Institute</div>
                 <br/>
                 <span style="font-family:Calibri,Arial, Helvetica, sans-serif; color:#5a9732; font-size:12px;"
-                      *ngIf="content.phoneNumber !== ''"><strong>P</strong></span> {{content.phoneNumber}}
+                      *ngIf="sigCompContent.phoneNumber !== ''"><strong>P</strong></span> {{sigCompContent.phoneNumber}}
 
                 <span style="font-family:Calibri,Arial, Helvetica, sans-serif; color:#5a9732; font-size:12px;"
-                      *ngIf="content.mobileNumber !== ''"><strong>&nbsp;&nbsp;&nbsp;M</strong></span>
-                {{content.mobileNumber}}
+                      *ngIf="sigCompContent.mobileNumber !== ''"><strong>&nbsp;&nbsp;&nbsp;M</strong></span>
+                {{sigCompContent.mobileNumber}}
 
                 <span style="font-family:Calibri,Arial, Helvetica, sans-serif; color:#5a9732; font-size:12px;"><strong>&nbsp;&nbsp;&nbsp;E</strong></span>
-                <a href="mailto:{{content.email}}" style="text-decoration: none;"> {{content.email}}</a>
+                <a href="mailto:{{sigCompContent.email}}" style="text-decoration: none;"> {{sigCompContent.email}}</a>
 
                 <span style="font-family:Calibri,Arial, Helvetica, sans-serif; color:#5a9732; font-size:12px;"><strong>&nbsp;&nbsp;&nbsp;W</strong></span>
                 <a href="http://kedri.aut.ac.nz" style="text-decoration: none;"> kedri.aut.ac.nz</a>
