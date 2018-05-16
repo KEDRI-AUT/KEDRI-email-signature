@@ -8,10 +8,10 @@ import {MessengerService} from "../messenger.service";
 })
 export class AppFormComponent implements OnInit {
 
-  initialContent: object;
+  initialContent: MessengerService = new MessengerService();
 
   constructor(private messageService: MessengerService) {
-    this.initialContent = this.messageService.content
+
   }
 
   ngOnInit() {
