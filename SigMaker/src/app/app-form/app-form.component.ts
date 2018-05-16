@@ -8,7 +8,7 @@ import {MessengerService} from "../messenger.service";
 })
 export class AppFormComponent implements OnInit {
 
-  initialContent: MessengerService = new MessengerService();
+  messengerServiceObj: MessengerService = new MessengerService();
 
   constructor(private messageService: MessengerService) {
 
