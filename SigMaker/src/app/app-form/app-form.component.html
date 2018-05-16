@@ -5,7 +5,7 @@
 </nav>
 
 <div class="container" style="margin-top: 20px">
-  <form>
+  <form #sigForm>
     <div class="form-row">
       <div class="form-group col-md-6">
         <label for="first_name_id">First Name <span>*</span></label>
@@ -47,8 +47,11 @@
         Show Images?
       </label>
     </div>
-    <input type="submit" value="Submit" class="btn btn-primary"
-           (click)="onContentCreate(firstName.value, lastName.value, email.value, phoneNumber.value, mobileNumber.value, position.value, showImages.checked)"/>
+    <div class="form-group btn-grid">
+      <button type="submit" value="Submit" class="btn btn-primary"
+            (click)="onContentCreate(firstName.value, lastName.value, email.value, phoneNumber.value, mobileNumber.value, position.value, showImages.checked)">Submit</button>
+      <button class="btn btn-danger" (click)="onClear(sigForm)">Clear</button>
+    </div>
 
   </form>
 </div>
