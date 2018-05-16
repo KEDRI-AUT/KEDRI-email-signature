@@ -9,7 +9,7 @@ import {HttpClient} from "@angular/common/http";
 })
 export class AppComponent implements OnInit {
 
-  content: {
+  appCompContent: {
     firstName: string,
     lastName: string,
     email: string,
@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.content = this.messengerService.content;
+    this.appCompContent = this.messengerService.content;
     this.httpClient.get('https://api.github.com/repos/KEDRI-AUT/KEDRI-email-signature/releases/latest').subscribe(
       data => {
         this.version = data['tag_name'];
