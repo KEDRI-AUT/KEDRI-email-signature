@@ -6,10 +6,12 @@ import {MessengerService} from "../messenger.service";
   templateUrl: './app-form.component.html',
   styleUrls: ['./app-form.component.css']
 })
+export class AppFormComponent {
 
   messengerServiceObj: MessengerService = new MessengerService();
 
 
+  constructor(private messageService: MessengerService) {
 
   }
 
