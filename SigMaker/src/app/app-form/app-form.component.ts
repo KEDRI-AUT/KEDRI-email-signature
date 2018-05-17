@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, ElementRef, Input} from '@angular/core';
 import {MessengerService} from "../messenger.service";
 
 @Component({
@@ -6,15 +6,11 @@ import {MessengerService} from "../messenger.service";
   templateUrl: './app-form.component.html',
   styleUrls: ['./app-form.component.css']
 })
-export class AppFormComponent implements OnInit {
 
   messengerServiceObj: MessengerService = new MessengerService();
 
-  constructor(private messageService: MessengerService) {
 
-  }
 
-  ngOnInit() {
   }
 
   onContentCreate(firstName: string, lastName: string, email: string, phoneNumber: string, mobileNumber: string, position: string, showImages: boolean) {

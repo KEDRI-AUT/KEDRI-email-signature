@@ -5,7 +5,6 @@ import {Component, Input, OnInit} from '@angular/core';
   templateUrl: './sig.component.html',
   styleUrls: ['./sig.component.css']
 })
-export class SigComponent implements OnInit {
 
   @Input() sigCompContent: {
     firstName: string,
@@ -19,9 +18,6 @@ export class SigComponent implements OnInit {
   };
 
   constructor() {
-  }
-
-  ngOnInit() {
   }
 
 }
